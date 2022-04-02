@@ -231,7 +231,7 @@ const Home: NextPage = () => {
       <WalletConnectButton />
       {followListInfo && (
             <div className={styles.subtitle}>
-              Your cybercredit score is: <strong>{followListInfo.followerCount + 1}</strong>
+              Your cybercredit score is: <strong>{followListInfo.followerCount + followListInfo.followingCount}</strong>
             </div>
       )}
       <Snackbar
