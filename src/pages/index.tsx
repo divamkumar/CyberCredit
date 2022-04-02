@@ -269,52 +269,10 @@ const Home: NextPage = () => {
       )}
       {followListInfo && (
         <div className={styles.listsContainer}>
-          <div className={styles.list}>
             <div className={styles.subtitle}>
               You have <strong>{followListInfo.followerCount}</strong>{" "}
               followers:
             </div>
-            <div className={styles.followList}>
-              {followListInfo.followers.list.map((user) => {
-                return (
-                  <div key={user.address} className={styles.user}>
-                    <Avatar src={user.avatar} className={styles.avatar} />
-                    <div className={styles.userAddress}>
-                      {user.domain || formatAddress(user.address)}
-                    </div>
-                  </div>
-                );
-              })}
-              {followListInfo.followers.pageInfo.hasNextPage && (
-                <LoadingButton onClick={() => fetchMore("followers")}>
-                  See More
-                </LoadingButton>
-              )}
-            </div>
-          </div>
-          <div className={styles.list}>
-            <div className={styles.subtitle}>
-              You have <strong>{followListInfo.followingCount}</strong>{" "}
-              followings:
-            </div>
-            <div className={styles.followList}>
-              {followListInfo.followings.list.map((user) => {
-                return (
-                  <div key={user.address} className={styles.user}>
-                    <Avatar src={user.avatar} className={styles.avatar} />
-                    <div className={styles.userAddress}>
-                      {user.domain || formatAddress(user.address)}
-                    </div>
-                  </div>
-                );
-              })}
-              {followListInfo.followings.pageInfo.hasNextPage && (
-                <LoadingButton onClick={() => fetchMore("followings")}>
-                  See More
-                </LoadingButton>
-              )}
-            </div>
-          </div>
         </div>
       )}
       <Snackbar
