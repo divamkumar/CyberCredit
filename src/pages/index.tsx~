@@ -224,7 +224,11 @@ const Home: NextPage = () => {
       </div>
       <div className={styles.discription}>
         <p>
-          This app displays the current user's wallet credit score after connecting their wallet.
+          This is a starter app. You can freely use it as a base for your application.{" "}
+        </p>
+        <p>
+          This app displays the current user&apos;s followings and followers. It
+          also allows the user to follow/unfollow a wallet address.
         </p>
         <p>Try it yourself!</p>
       </div>

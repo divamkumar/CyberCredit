@@ -1,9 +1,3 @@
-This is an example application that uses [CyberConnect API](https://docs.cyberconnect.me/), based on [Next.js](https://nextjs.org/).
-
-Deployed to https://cyberconnect-start.netlify.app/ via [Netlify](https://www.netlify.com/)
-
-Fork it freely.
-
 ## Features
 
 This app includes two features:
@@ -14,7 +8,7 @@ The app allows the current user to search a wallet address and follow/unfollow i
 
 #### 2. followings/followers list
 
-The app displays the current user followings and followers list.
+The app displays the current user's credit score.
 
 ## Getting Started
 
