@@ -230,14 +230,9 @@ const Home: NextPage = () => {
       </div>
       <WalletConnectButton />
       {followListInfo && (
-        <div className={styles.listsContainer}>
-          <div className={styles.list}>
             <div className={styles.subtitle}>
-              You have <strong>{followListInfo.followerCount}</strong>{" "}
-              followers:
+              Your cybercredit score is: <strong>{followListInfo.followerCount + 1}</strong>
             </div>
-          </div>
-        </div>
       )}
       <Snackbar
         open={snackbarOpen}
