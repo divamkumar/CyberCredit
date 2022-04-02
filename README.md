@@ -2,11 +2,11 @@
 
 This app includes two features:
 
-#### 1. connect wallet
+#### 1. Connect Wallet
 
 The app allows the current user to connect their wallet.
 
-#### 2. display credit score
+#### 2. Display Credit Score
 
 The app displays the current user's credit score.
 

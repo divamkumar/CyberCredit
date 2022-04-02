@@ -2,11 +2,11 @@
 
 This app includes two features:
 
-#### 1. follow/unfollow
+#### 1. connect wallet
 
-The app allows the current user to search a wallet address and follow/unfollow it.
+The app allows the current user to connect their wallet.
 
-#### 2. followings/followers list
+#### 2. display credit score
 
 The app displays the current user's credit score.
 
