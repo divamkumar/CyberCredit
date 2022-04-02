@@ -229,90 +229,12 @@ const Home: NextPage = () => {
         <p>Try it yourself!</p>
       </div>
       <WalletConnectButton />
-      {address && (
-        <div className={styles.searchSection}>
-          <div className={styles.inputContainer}>
-            <TextField
-              onChange={(e) => handleInputChange(e.target.value)}
-              className={styles.textField}
-              placeholder="Please input the Address you want to follow."
-            />
-            <LoadingButton
-              onClick={handleFollow}
-              disabled={
-                searchLoading ||
-                !isValidAddr(searchInput) ||
-                !address ||
-                address === searchInput
-              }
-              loading={followLoading}
-              className={styles.loadingButton}
-            >
-              {!searchAddrInfo?.connections[0].followStatus.isFollowing
-                ? "Follow"
-                : "Unfollow"}
-            </LoadingButton>
-          </div>
-          {!isValidAddr(searchInput) ? (
-            <div className={styles.error}>Please enter a valid address.</div>
-          ) : address === searchInput ? (
-            <div className={styles.error}>You can’t follow yourself : )</div>
-          ) : (
-            <div className={styles.isFollowed}>
-              This user{" "}
-              {searchAddrInfo?.connections[0].followStatus.isFollowed
-                ? "is following you"
-                : "has not followed you yet"}
-            </div>
-          )}
-        </div>
-      )}
       {followListInfo && (
         <div className={styles.listsContainer}>
           <div className={styles.list}>
             <div className={styles.subtitle}>
               You have <strong>{followListInfo.followerCount}</strong>{" "}
               followers:
-            </div>
-            <div className={styles.followList}>
-              {followListInfo.followers.list.map((user) => {
-                return (
-                  <div key={user.address} className={styles.user}>
-                    <Avatar src={user.avatar} className={styles.avatar} />
-                    <div className={styles.userAddress}>
-                      {user.domain || formatAddress(user.address)}
-                    </div>
-                  </div>
-                );
-              })}
-              {followListInfo.followers.pageInfo.hasNextPage && (
-                <LoadingButton onClick={() => fetchMore("followers")}>
-                  See More
-                </LoadingButton>
-              )}
-            </div>
-          </div>
-          <div className={styles.list}>
-            <div className={styles.subtitle}>
-              You have <strong>{followListInfo.followingCount}</strong>{" "}
-              followings:
-            </div>
-            <div className={styles.followList}>
-              {followListInfo.followings.list.map((user) => {
-                return (
-                  <div key={user.address} className={styles.user}>
-                    <Avatar src={user.avatar} className={styles.avatar} />
-                    <div className={styles.userAddress}>
-                      {user.domain || formatAddress(user.address)}
-                    </div>
-                  </div>
-                );
-              })}
-              {followListInfo.followings.pageInfo.hasNextPage && (
-                <LoadingButton onClick={() => fetchMore("followings")}>
-                  See More
-                </LoadingButton>
-              )}
             </div>
           </div>
         </div>
