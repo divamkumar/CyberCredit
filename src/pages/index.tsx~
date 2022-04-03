@@ -216,7 +216,7 @@ const Home: NextPage = () => {
     <div className={styles.container}>
       <div className={styles.logo}>
         <img
-          src="/cyberconnect-logo.png"
+          src="/cyberconnect-logo.jpg"
           alt="CyberConnect Logo"
           width="100%"
           height="100%"
@@ -231,7 +231,7 @@ const Home: NextPage = () => {
       <WalletConnectButton />
       {followListInfo && (
             <div className={styles.subtitle}>
-              Your cybercredit score is: <strong>{followListInfo.followerCount + followListInfo.followingCount}</strong>
+              Your cybercredit score is: <strong>{10 + followListInfo.followerCount}</strong>
             </div>
       )}
       <Snackbar
@@ -247,6 +247,10 @@ const Home: NextPage = () => {
           {snackbarText}
         </MuiAlert>
       </Snackbar>
+      )}
+      <div className={styles.discription}>
+        <p> To see the details of the credit score calculation, click <a href="https://github.com/divamkumar/cybercredit">here</a></p>
+      </div>
     </div>
   );
 };

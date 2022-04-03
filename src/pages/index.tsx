@@ -231,9 +231,12 @@ const Home: NextPage = () => {
       <WalletConnectButton />
       {followListInfo && (
             <div className={styles.subtitle}>
-              Your cybercredit score is: <strong>{followListInfo.followerCount + followListInfo.followingCount}</strong>
+              Your cybercredit score is: <strong>{10 + followListInfo.followerCount}</strong>
             </div>
       )}
+      <div className={styles.discription}>
+      	<p> To see the details of the credit score calculation, click <a href="https://github.com/divamkumar/cybercredit">here</a></p>
+      </div>
       <Snackbar
         open={snackbarOpen}
         autoHideDuration={6000}
