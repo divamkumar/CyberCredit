@@ -29,8 +29,12 @@ Activity and Age Calculation:
  - Transactions within 20-24 months(14600-17520 hours): 0.5 multiplier
 
 
-Assets Calculation: Start off with 40 points, you cannot go above 40 points 
- - 0-0.1 ETH = 0.1x multiplier 
+### Assets Calculation:
+Assets is calculated through a multiplier system. The highest points achivable in the assets category is 40 points. Multipliers level is achived through the level of assets owned by the user. *For example, if they have 0.05 eth, they would get 0.005 points*
+
+Refer to the table below: 
+
+- 0-0.1 ETH = 0.1x multiplier 
  - 0.1-0.5 ETH = 0.2x multiplier 
  - 0.5-1 ETH: 0.3 x multiplier 
  - 1 ETH- 5 ETH: 0.40 multiplier 
@@ -43,7 +47,11 @@ Assets Calculation: Start off with 40 points, you cannot go above 40 points
 
 For example, if they have 0.05 eth, they would get 0.005 points 
 
-Social Reputation Calculation: 
+### Social Reputation Calculation: 
+Social Reputation is calculated through a multiplier system. The highest point achivable in the scoial reputation category is 10 points. Social Reputation level is achieved through the ammount of flollowers owned by the user. Extra points are erned for the social netweork linked to the account
+
+Refer to the table below:
+
  - Start off with 10 points, you cannot go above 10 points 
  -  10,000 Followers: 0.50 x multiplier 
  -  5,000 Followers: 0.40 x multiplier 
