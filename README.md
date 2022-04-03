@@ -10,7 +10,7 @@ The app allows the current user to connect their wallet.
 
 The app displays the current user's credit score.
 
-### Credit score Calculation
+## Credit score Calculation
 The way that the credit score is calculated for this project is by
 using a system which combines the use of a person's financial assets 
 (how long they hold certain coins, how many POAPS, etc.) in addition to
