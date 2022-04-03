@@ -227,6 +227,7 @@ const Home: NextPage = () => {
           This app displays the current user's wallet credit score after connecting their wallet.
         </p>
         <p>Try it yourself!</p>
+        <p> To see the details of the credit score calculation, click <a href="https://github.com/divamkumar/cybercredit">here</a></p>
       </div>
       <WalletConnectButton />
       {followListInfo && (
@@ -234,9 +235,6 @@ const Home: NextPage = () => {
               Your cybercredit score is: <strong>{10 + followListInfo.followerCount}</strong>
             </div>
       )}
-      <div className={styles.discription}>
-      	<p> To see the details of the credit score calculation, click <a href="https://github.com/divamkumar/cybercredit">here</a></p>
-      </div>
       <Snackbar
         open={snackbarOpen}
         autoHideDuration={6000}
