@@ -216,7 +216,7 @@ const Home: NextPage = () => {
     <div className={styles.container}>
       <div className={styles.logo}>
         <img
-          src="/cyberconnect-logo.png"
+          src="/cyberconnect-logo.jpg"
           alt="CyberConnect Logo"
           width="100%"
           height="100%"
