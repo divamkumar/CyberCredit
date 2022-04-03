@@ -49,16 +49,18 @@ Refer to the table below:
 Social Reputation is calculated through a multiplier system. The highest point achivable in the scoial reputation category is 10 points. Social Reputation level is achieved through the ammount of flollowers owned by the user. Extra points are erned for the social netweork linked to the account
 Refer to the table below:
 
- - Start off with 10 points, you cannot go above 10 points 
- -  10,000 Followers: 0.50 x multiplier 
- -  5,000 Followers: 0.40 x multiplier 
- -  2,500 Followers: 0.30 x multiplier 
- -  1,000 Followers: 0.25 x multiplier 
- - 500 Followers: 0.20 x multiplier
- - 200 Followers: 0.15 x multiplier 
- -  100 Followers: 0.10 x multiplier 
- - 10 Followers: 0.5 x multiplier 
- - 10 Followers: 0 x multiplier 
+| Followers     | Multiplier    |  
+| ------------- |:-------------:|  
+| 10,000        | 0.50          |  
+| 5,000         | 0.40          |  
+| 2,500         | 0.30          |  
+| 1,000         | 0.25          |  
+| 500           | 0.20          |  
+| 200           | 0.15          |  
+| 100           | 0.10          |  
+| 10            | 0.5           |  
+| < 10          | 0             |   
+
 
 After calculating the raw score, add 5 points if they have their twitter linked.
 | Level         | Points        |  
