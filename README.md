@@ -13,7 +13,7 @@ The app displays the current user's credit score.
 ## Credit Score Calculation
 
 The Credit Score of the user is calculated using a complex algorithm that utilizes on-chain data.  
-The **first** part of the score is derived from the financial assets of the wallet (how long they've held certain tokens (ERC-20 & ERC-721), # of POAPs, etc.)  
+The **first** part of the score is derived from the financial assets of the wallet (how long they've held certain coins, # of POAPs, etc.)  
 The **second** part of the score is derived from their social activity on the CyberConnect platform (followers/following count)  
 
 The intricacies of how the social credit calculations are made can be outlined below:  
@@ -34,7 +34,7 @@ Activity and Age Calculation:
 
 
 ### Assets Calculation:
-Assets is calculated through a multiplier system. The highest points achivable in the assets category is 40 points. Multipliers level is achived through the level of assets owned by the user. *For example, if they own 0.05 ETH in their wallet, they would get 0.005 points*  
+Assets is calculated through a multiplier system. The highest points achivable in the assets category is 40 points. Multipliers level is achived through the level of assets owned by the user. *For example, if they have 0.05 ETH, they would get 0.005 points*  
 Refer to the table below:
 
 | Assets Value   | Multiplier    |  
@@ -52,7 +52,7 @@ Refer to the table below:
 
 
 ### Social Reputation Calculation: 
-Social Reputation is calculated through a multiplier system. The highest point achivable in the scoial reputation category is 10 points. Social Reputation level is achieved through the amount of followers owned by the user. Extra points are earned for the social network linked to the account
+Social Reputation is calculated through a multiplier system. The highest point achivable in the scoial reputation category is 10 points. Social Reputation level is achieved through the ammount of flollowers owned by the user. Extra points are erned for the social netweork linked to the account
 Refer to the table below:
 
 | Followers     | Multiplier    |  
@@ -117,3 +117,4 @@ To learn more about CyberConnect, take a look at the following resources:
 
 - [CyberConnect Web Site](https://cyberconnect.me/) - introduction to CyberConnect,
 - [CyberConnect Developers Documentation](https://docs.cyberconnect.me/) - dig deeper into CyberConnect API.
+- [CyberConnect Twitter Page] (https://twitter.com/cyberconnecthq) - CyberConnect social page.
