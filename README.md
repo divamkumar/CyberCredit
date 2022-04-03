@@ -12,9 +12,9 @@ The app displays the current user's credit score.
 
 ## Credit Score Calculation
 
-The Credit Score of the user is calculated using a complex algorithm that utilizes on-chain data. 
-The first part of the score is derived from the financial assets of the wallet (how long they've held certain coins, # of POAPs, etc.)
-The second part of the score is derived from their social activity on the CyberConnect platform (followers/following count)
+The Credit Score of the user is calculated using a complex algorithm that utilizes on-chain data.  
+The **first** part of the score is derived from the financial assets of the wallet (how long they've held certain coins, # of POAPs, etc.)  
+The **second** part of the score is derived from their social activity on the CyberConnect platform (followers/following count)  
 
 The intricacies of how the social credit calculations are made can be outlined below:
 Activity and Age Calculation: 
@@ -22,21 +22,21 @@ Activity and Age Calculation:
  - Start off with 50 points, you cannot go above 50 points 
  - Activity: Each transaction gets you 1 points 
  - Transactions within less than a month(730 hours) : no multiplier 
- - Transactions within 1-4 months (730.1-2920 hours): 0.1 multiplier  
- - Transactions within 4-8 months (2920-5840 hours): 0.2 multiplier 
- - Transactions within 12-16 months (8760.01-11680 hours): 0.3 multiplier
- - Transactions within 16-20 months(11680.1-14599 hours): 0.4 multiplier  
- - Transactions within 20-24 months(14600-17520 hours): 0.5 multiplier
+ - Transactions within 1 - 4 months (730.1-2920 hours): 0.1 multiplier  
+ - Transactions within 4 - 8 months (2920-5840 hours): 0.2 multiplier 
+ - Transactions within 12 - 16 months (8760.01-11680 hours): 0.3 multiplier
+ - Transactions within 16 - 20 months(11680.1-14599 hours): 0.4 multiplier  
+ - Transactions within 20 - 24 months(14600-17520 hours): 0.5 multiplier
 
 
 Assets Calculation: Start off with 40 points, you cannot go above 40 points 
- - 0-0.1 ETH = 0.1x multiplier 
- - 0.1-0.5 ETH = 0.2x multiplier 
- - 0.5-1 ETH: 0.3 x multiplier 
- - 1 ETH- 5 ETH: 0.40 multiplier 
- - 5 ETH-10 ETH: 0.5 multiplier 
- - 10ETH-50 ETH: 0.6 multiplier 
- - 50 ETH- 100 ETH: 0.7 multiplier 
+ - 0 - 0.1 ETH = 0.1x multiplier 
+ - 0.1 - 0.5 ETH = 0.2x multiplier 
+ - 0.5 - 1 ETH: 0.3 x multiplier 
+ - 1 ETH - 5 ETH: 0.40 multiplier 
+ - 5 ETH - 10 ETH: 0.5 multiplier 
+ - 10ETH - 50 ETH: 0.6 multiplier 
+ - 50 ETH - 100 ETH: 0.7 multiplier 
  - 100 ETH - 500 ETH: 0.80 multiplier 
  - 500 ETH - 1000 ETH: 0.90 multiplier 
  - 1000 ETH + : 1 x multiplier 
@@ -56,17 +56,18 @@ Social Reputation Calculation:
  - 10 Followers: 0 x multiplier 
 
 After calculating the raw score, add 5 points if they have their twitter linked.
-
- - Level 1: 0-10 points 
- - Level 2: 10-20 points 
- - Level 3: 20-30 points 
- - Level 4: 30-40 points 
- - Level 5: 40-50 points 
- - Level 6: 50-60 points 
- - Level 7: 60-70 points 
- - Level 8: 70-80 points 
- - Level 9: 80-90 points 
- - Level 10: 90 - 100 points 
+| Level         | Points        |  
+| ------------- |:-------------:|  
+| 1             | 0 - 10 points |  
+| 2             | 10 - 20 points|  
+| 3             | 20 - 30 points|  
+| 4             | 30 - 40 points|  
+| 5             | 40 - 50 points|  
+| 6             | 50 - 60 points|  
+| 7             | 60 - 70 points|  
+| 8             | 70 - 80 points|  
+| 9             | 80 - 90 points|  
+| 10            | 90 - 100 points|  
 
 Activity (Age + Transactions): 50%
 
