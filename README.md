@@ -16,33 +16,39 @@ The Credit Score of the user is calculated using a complex algorithm that utiliz
 The **first** part of the score is derived from the financial assets of the wallet (how long they've held certain coins, # of POAPs, etc.)  
 The **second** part of the score is derived from their social activity on the CyberConnect platform (followers/following count)  
 
-The intricacies of how the social credit calculations are made can be outlined below:
+The intricacies of how the social credit calculations are made can be outlined below:  
 Activity and Age Calculation: 
 
  - Start off with 50 points, you cannot go above 50 points 
- - Activity: Each transaction gets you 1 points 
- - Transactions within less than a month(730 hours) : no multiplier 
- - Transactions within 1 - 4 months (730.1-2920 hours): 0.1 multiplier  
- - Transactions within 4 - 8 months (2920-5840 hours): 0.2 multiplier 
- - Transactions within 12 - 16 months (8760.01-11680 hours): 0.3 multiplier
- - Transactions within 16 - 20 months(11680.1-14599 hours): 0.4 multiplier  
- - Transactions within 20 - 24 months(14600-17520 hours): 0.5 multiplier
+ - Activity: Each transaction gets you 1 point 
+
+| Age (Hours)   | Multiplier    |  
+|:-------------:|:-------------:|  
+| < 730         | 0.005         |  
+| 730 - 2920    | 0.01          |  
+| 2920 - 5840   | 0.02          |  
+| 5840 - 8760  | 0.03          |  
+| 8760 - 11680 | 0.04          |  
+| 11680 - 14599 | 0.05          |  
+| > 14600    | 0.06          |  
 
 
 ### Assets Calculation:
-Assets is calculated through a multiplier system. The highest points achivable in the assets category is 40 points. Multipliers level is achived through the level of assets owned by the user. *For example, if they have 0.05 eth, they would get 0.005 points*
+Assets is calculated through a multiplier system. The highest points achivable in the assets category is 40 points. Multipliers level is achived through the level of assets owned by the user. *For example, if they have 0.05 ETH, they would get 0.005 points*  
 Refer to the table below:
 
- - 0 - 0.1 ETH = 0.1x multiplier 
- - 0.1 - 0.5 ETH = 0.2x multiplier 
- - 0.5 - 1 ETH: 0.3 x multiplier 
- - 1 ETH - 5 ETH: 0.40 multiplier 
- - 5 ETH - 10 ETH: 0.5 multiplier 
- - 10ETH - 50 ETH: 0.6 multiplier 
- - 50 ETH - 100 ETH: 0.7 multiplier 
- - 100 ETH - 500 ETH: 0.80 multiplier 
- - 500 ETH - 1000 ETH: 0.90 multiplier 
- - 1000 ETH + : 1 x multiplier 
+| Assets Value   | Multiplier    |  
+|:-------------:|:-------------:|  
+| 0 - 0.1 ETH   | 0.10          |  
+| 0.1 - 0.5 ETH | 0.20          |  
+| 0.5 - 1 ETH   | 0.30          |  
+| 1 - 5 ETH     | 0.40          |  
+| 5 - 10 ETH    | 0.50          |  
+| 10 - 50 ETH   | 0.60          |  
+| 50 - 100 ETH  | 0.70          |  
+| 100 - 500 ETH | 0.80          |  
+| 500 - 1000 ETH| 0.90          |   
+| > 1000 ETH    | 1.00          |
 
 
 ### Social Reputation Calculation: 
@@ -62,7 +68,7 @@ Refer to the table below:
 | < 10          | 0             |   
 
 
-After calculating the raw score, add 5 points if they have their twitter linked.
+After calculating the raw score, add 5 points if they have their Twitter linked.
 | Level         | Points        |  
 | ------------- |:-------------:|  
 | 1             | 0 - 10 points |  
@@ -76,16 +82,12 @@ After calculating the raw score, add 5 points if they have their twitter linked.
 | 9             | 80 - 90 points|  
 | 10            | 90 - 100 points|  
 
-Activity (Age + Transactions): 50%
 
-Assets: 40%
-
-Social Rep: 10%
-
-Limit: 100 points of all categories above
+Final score out of **100**:
  - 50 points to Activity
  - 40 points to Assets
  - 10 points to Social Rep
+
 
 ## Getting Started
 
