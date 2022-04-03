@@ -10,14 +10,14 @@ The app allows the current user to connect their wallet.
 
 The app displays the current user's credit score.
 
-## Credit score Calculation
-The way that the credit score is calculated for this project is by
-using a system which combines the use of a person's financial assets 
-(how long they hold certain coins, how many POAPS, etc.) in addition to
-how social they are on the cyberconnect platform (how many followers they have).
+## Credit Score Calculation
+
+The Credit Score of the user is calculated using a complex algorithm that utilizes on-chain data. 
+The first part of the score is derived from the financial assets of the wallet (how long they've held certain coins, # of POAPs, etc.)
+The second part of the score is derived from their social activity on the CyberConnect platform (followers/following count)
 
 The intricacies of how the social credit calculations are made can be outlined below:
-ctivity and Age Calculation: 
+Activity and Age Calculation: 
 
  - Start off with 50 points, you cannot go above 50 points 
  - Activity: Each transaction gets you 1 points 
